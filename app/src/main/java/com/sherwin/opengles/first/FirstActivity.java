@@ -1,9 +1,11 @@
-package com.sherwin.opengles;
+package com.sherwin.opengles.first;
 
 import android.opengl.GLSurfaceView;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.sherwin.opengles.MyRenderer;
+import com.sherwin.opengles.R;
 import com.sherwin.opengles.databinding.FirstActivityBinding;
 import com.sherwin.rapid.base.ui.annotation.ContentView;
 import com.sherwin.rapid.databinding.ui.BaseDataBindingActivity;
