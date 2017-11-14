@@ -1,0 +1,112 @@
+<resources>
+    <string name="common_ok">好的</string>
+    <string name="common_refuse">拒绝</string>
+    <string name="common_next">下一步</string>
+
+    <string name="net_state_disconnect">网络设置未打开，请打开网络</string>
+    <string name="net_state_error">网络异常</string>
+    <string name="net_request_error">网络请求失败</string>
+    <string name="net_json_error">Json解析出错</string>
+    <string name="net_response_not_match">返回类型不匹配</string>
+    <string name="net_response_nothing">没有返回内容</string>
+
+
+    <!-- 日期相关-->
+    <!--<string name="date_format_datetime">yyyy年MM月dd日 HH:mm:ss"</string>-->
+
+    <!-- 权限相关 -->
+    <string name="permission_tip">若不授权部分权限，则无法使用相应功能\n是否开启？</string>
+
+    <string name="access_token_timeout">登录证书已过期，请重新登录！</string>
+
+
+
+    <!-- 日期格式 -->
+    <string name="common_date_format_date_time">yyyy年MM月dd日 HH:mm:ss</string>
+    <string name="common_date_format_moth_time">MM月dd日 HH:mm</string>
+    <string name="common_date_format_date">yyyy-MM-dd</string>
+    <!--<string name="common_date_format_time">HH:mm:ss</string>-->
+    <string name="common_date_format_error">无</string>
+    <string name="common_date_just_now">刚刚</string>
+    <string name="common_date_format_moth_day">MM月dd日</string>
+    <string name="common_date_format_h_m">HH:mm</string>
+    <string name="common_date_seconds_ago">%1$d秒前</string>
+    <string name="common_date_minutes_ago">%1$d分钟前</string>
+    <string name="common_date_hours_ago">%1$d小时前</string>
+    <string name="common_date_day_ago">%1$d天前</string>
+    <string name="common_date_moths_ago">%1$d月前</string>
+    <string name="common_date_yeahs_ago">%1$d年前</string>
+    <string name="common_date_today">今天</string>
+    <string name="common_date_yesterday">昨天</string>
+    <string name="common_date_before_yesterday">前天</string>
+
+    <string name="common_date_less_than_one_months">小于1个月</string>
+    <string name="common_date_a_few_moths">%1$d个月</string>
+    <string name="common_date_a_few_yeahs_and_moths">%1$d年%2$d个月</string>
+
+    <!-- 性别 -->
+    <string name="common_gender_male">男</string>
+    <string name="common_gender_female">女</string>
+    <string name="common_gender_secret">保密</string>
+    <array name="common_genders">
+        <item>@string/common_gender_secret</item>
+        <item>@string/common_gender_male</item>
+        <item>@string/common_gender_female</item>
+    </array>
+
+    <!-- 周时间-->
+    <string name="common_sunday">日</string>
+    <string name="common_monday">一</string>
+    <string name="common_tuesday">二</string>
+    <string name="common_wednesday">三</string>
+    <string name="common_thursday">四</string>
+    <string name="common_friday">五</string>
+    <string name="common_saturday">六</string>
+    <!-- 周时间-->
+    <string name="common_short_sunday">周日</string>
+    <string name="common_short_monday">周一</string>
+    <string name="common_short_tuesday">周二</string>
+    <string name="common_short_wednesday">周三</string>
+    <string name="common_short_thursday">周四</string>
+    <string name="common_short_friday">周五</string>
+    <string name="common_short_saturday">周六</string>
+
+    <!-- 周时间-->
+    <string name="common_full_sunday">星期日</string>
+    <string name="common_full_monday">星期一</string>
+    <string name="common_full_tuesday">星期二</string>
+    <string name="common_full_wednesday">星期三</string>
+    <string name="common_full_thursday">星期四</string>
+    <string name="common_full_friday">星期五</string>
+    <string name="common_full_saturday">星期六</string>
+
+    <array name="common_full_week_days">
+        <item>@string/common_full_sunday</item>
+        <item>@string/common_full_monday</item>
+        <item>@string/common_full_tuesday</item>
+        <item>@string/common_full_wednesday</item>
+        <item>@string/common_full_thursday</item>
+        <item>@string/common_full_friday</item>
+        <item>@string/common_full_saturday</item>
+    </array>
+    <array name="common_short_week_days">
+        <item>@string/common_short_sunday</item>
+        <item>@string/common_short_monday</item>
+        <item>@string/common_short_tuesday</item>
+        <item>@string/common_short_wednesday</item>
+        <item>@string/common_short_thursday</item>
+        <item>@string/common_short_friday</item>
+        <item>@string/common_short_saturday</item>
+    </array>
+
+    <array name="common_week_days">
+        <item>@string/common_sunday</item>
+        <item>@string/common_monday</item>
+        <item>@string/common_tuesday</item>
+        <item>@string/common_wednesday</item>
+        <item>@string/common_thursday</item>
+        <item>@string/common_friday</item>
+        <item>@string/common_saturday</item>
+    </array>
+
+</resources>
