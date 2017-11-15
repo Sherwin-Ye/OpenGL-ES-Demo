@@ -3,12 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/OpenGL-ES-Demo.iml" filepath="$PROJECT_DIR$/OpenGL-ES-Demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/OpenGLES.iml" filepath="$PROJECT_DIR$/OpenGLES.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/radroid-base/radroid-base.iml" filepath="$PROJECT_DIR$/radroid-base/radroid-base.iml" />
-      <module fileurl="file://$PROJECT_DIR$/radroid-base/radroid-base.iml" filepath="$PROJECT_DIR$/radroid-base/radroid-base.iml" />
-      <module fileurl="file://$PROJECT_DIR$/radroid-databinding/radroid-databinding.iml" filepath="$PROJECT_DIR$/radroid-databinding/radroid-databinding.iml" />
       <module fileurl="file://$PROJECT_DIR$/radroid-databinding/radroid-databinding.iml" filepath="$PROJECT_DIR$/radroid-databinding/radroid-databinding.iml" />
     </modules>
   </component>

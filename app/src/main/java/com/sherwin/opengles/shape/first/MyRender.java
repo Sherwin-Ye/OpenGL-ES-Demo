@@ -1,4 +1,4 @@
-package com.sherwin.opengles;
+package com.sherwin.opengles.shape.first;
 
 import android.opengl.GLES20;
 import android.opengl.GLSurfaceView;
@@ -16,7 +16,7 @@ import javax.microedition.khronos.opengles.GL10;
  * @date 2017/11/14.9:07
  * @desc
  */
-public class MyRenderer implements GLSurfaceView.Renderer {
+public class MyRender implements GLSurfaceView.Renderer {
     private int program;
     private int vPosition;
     private int uColor;

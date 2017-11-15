@@ -8,8 +8,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.sherwin.opengles.shape.Square.SquareActivity;
+import com.sherwin.opengles.shape.circle.CircleActivity;
 import com.sherwin.opengles.databinding.HomeActivityBinding;
-import com.sherwin.opengles.first.FirstActivity;
+import com.sherwin.opengles.shape.cube.CubeActivity;
+import com.sherwin.opengles.shape.first.FirstActivity;
+import com.sherwin.opengles.shape.triangle.TriangleActivity;
 import com.sherwin.rapid.base.ui.annotation.ContentView;
 import com.sherwin.rapid.base.util.ToastUtil;
 import com.sherwin.rapid.databinding.ui.BaseDataBindingActivity;
@@ -36,7 +40,10 @@ public class HomeActivity extends BaseDataBindingActivity<HomeActivityBinding> {
 
         data=new ArrayList<>();
         data.add(new MenuBean("第一个OpenGL+JNI",FirstActivity.class));
-        data.add(new MenuBean("绘制形体",null));
+        data.add(new MenuBean("绘制三角形", TriangleActivity.class));
+        data.add(new MenuBean("绘制矩形", SquareActivity.class));
+        data.add(new MenuBean("绘制圆形", CircleActivity.class));
+        data.add(new MenuBean("绘制立方体", CubeActivity.class));
         data.add(new MenuBean("图片处理",null));
         data.add(new MenuBean("图形变换",null));
         data.add(new MenuBean("相机",null));

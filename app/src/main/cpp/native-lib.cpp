@@ -3,7 +3,7 @@
 
 extern "C"
 jstring
-Java_com_sherwin_opengles_FirstActivity_stringFromJNI(
+Java_com_sherwin_opengles_shape_first_FirstActivity_stringFromJNI(
         JNIEnv *env,
         jobject /* this */) {
     std::string hello = "Hello from C++";

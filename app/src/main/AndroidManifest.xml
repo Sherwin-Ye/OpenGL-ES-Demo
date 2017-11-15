@@ -16,8 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".first.FirstActivity">
-        </activity>
+        <activity android:name=".shape.first.FirstActivity"></activity>
+        <activity android:name=".shape.triangle.TriangleActivity"></activity>
+        <activity android:name=".shape.Square.SquareActivity"></activity>
+        <activity android:name=".shape.circle.CircleActivity"></activity>
+        <activity android:name=".shape.cube.CubeActivity"></activity>
+
     </application>
 
 </manifest>
