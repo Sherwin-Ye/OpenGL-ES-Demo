@@ -1,6 +1,7 @@
 package com.sherwin.opengles.utils;
 
 import android.opengl.Matrix;
+
 /**
  * @author Sherwin.Ye 674718661@qq.com
  * @date 2017/11/15.13:58
@@ -9,6 +10,35 @@ import android.opengl.Matrix;
 public class MatrixState {
     private static float[] mProjMatrix = new float[16];// 4x4矩阵 存储投影矩阵
     private static float[] mVMatrix = new float[16];// 摄像机位置朝向9参数矩阵
+
+    /*
+    * 新建平移变换矩阵
+    */
+    private static float[] mtMatrix = new float[16];// 平移变换矩阵
+
+    /*
+     * 初始化为单位矩阵
+     */
+    static {
+        //初始化为单位矩阵
+        Matrix.setIdentityM(mtMatrix, 0);
+    }
+
+    /*
+     * 平移变换方法共外部使用
+     */
+    public static void translate(float x, float y, float z) {//设置沿xyz轴移动
+        Matrix.translateM(mtMatrix, 0, x, y, z);
+    }
+
+    public static void rotate(float angle, float x, float y, float z) {// 设置绕xyz轴移动
+        Matrix.rotateM(mtMatrix, 0, angle, x, y, z);
+    }
+
+    //缩放变换
+    public static void scale(float x,float y,float z){
+        Matrix.scaleM(mtMatrix,0, x, y, z);
+    }
 
     // 设置摄像机
     public static void setCamera(float cx, // 摄像机位置x
@@ -39,7 +69,13 @@ public class MatrixState {
     static float[] mMVPMatrix = new float[16];
 
     public static float[] getFinalMatrix() {
-        Matrix.multiplyMM(mMVPMatrix, 0, mProjMatrix, 0, mVMatrix, 0);
+        /*
+         * 乘以平移变换矩阵
+         */
+        Matrix.multiplyMM(mMVPMatrix, 0, mVMatrix, 0, mtMatrix, 0);
+        Matrix.multiplyMM(mMVPMatrix, 0, mProjMatrix, 0, mMVPMatrix, 0);
+
+//        Matrix.multiplyMM(mMVPMatrix, 0, mProjMatrix, 0, mVMatrix, 0);
         return mMVPMatrix;
     }
 }

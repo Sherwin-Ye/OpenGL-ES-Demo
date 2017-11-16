@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.sherwin.opengles.shape.Ball.BallActivity;
 import com.sherwin.opengles.shape.Square.SquareActivity;
 import com.sherwin.opengles.shape.circle.CircleActivity;
 import com.sherwin.opengles.databinding.HomeActivityBinding;
@@ -44,7 +45,7 @@ public class HomeActivity extends BaseDataBindingActivity<HomeActivityBinding> {
         data.add(new MenuBean("绘制矩形", SquareActivity.class));
         data.add(new MenuBean("绘制圆形", CircleActivity.class));
         data.add(new MenuBean("绘制立方体", CubeActivity.class));
-        data.add(new MenuBean("图片处理",null));
+        data.add(new MenuBean("绘制球体",BallActivity.class));
         data.add(new MenuBean("图形变换",null));
         data.add(new MenuBean("相机",null));
 //        add("绘制形体",FGLViewActivity.class);

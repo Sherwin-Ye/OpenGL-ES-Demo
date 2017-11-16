@@ -21,6 +21,8 @@
         <activity android:name=".shape.Square.SquareActivity"></activity>
         <activity android:name=".shape.circle.CircleActivity"></activity>
         <activity android:name=".shape.cube.CubeActivity"></activity>
+        <activity android:name=".shape.Ball.BallActivity"></activity>
+
 
     </application>
 

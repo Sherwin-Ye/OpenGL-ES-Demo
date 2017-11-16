@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="com.sherwin.opengles.shape.first.FirstActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <com.sherwin.rapid.base.framework.widget.WrapLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_radio_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击垂直翻转30°"/>
+            <Button
+                android:id="@+id/btn_radio_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击水平翻转30°"/>
+            <Button
+                android:id="@+id/btn_scale_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击缩小"/>
+            <Button
+                android:id="@+id/btn_scale_big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击放大"/>
+        </com.sherwin.rapid.base.framework.widget.WrapLayout>
+
+        <android.opengl.GLSurfaceView
+            android:id="@+id/glv_demo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</layout>
